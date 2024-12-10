@@ -37,9 +37,12 @@ upBtn.addEventListener('click', () => {
     changeSlide('up')
 })
 
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowUp' || e.key === 'ArrowRight') {
+        changeSlide('up')
+    } else if (e.key === 'ArrowDown' || e.key === 'ArrowLeft') {
+        changeSlide('down')
+    };
 
-
-
-
-
+})
 
